@@ -42,3 +42,18 @@
 - Added message persistence to Durable Object
 - Implemented pruning logic to cap history size
 - Centralized chat logic inside the Durable Object
+
+## Prompt 4 — Rolling summary memory
+**Goal:** Add a rolling summary that compresses older conversation context into a concise study memory.
+
+**Prompt:**
+> Extend the Durable Object to maintain a rolling summary of the conversation by:
+> - Using the LLM to summarize recent messages
+> - Merging the summary with existing memory
+> - Pruning detailed messages after summarization
+> Focus the summary on key concepts and learning points.
+
+**Result:**
+- Added rolling summary stored in Durable Object
+- Implemented summarization prompt using Workers AI
+- Reduced stored message history while preserving context
