@@ -13,3 +13,17 @@
 - Added Durable Object class stub
 - Added Workers AI binding in wrangler.toml
 
+## Prompt 2 — LLM chat integration
+**Goal:** Implement a basic chat flow that sends user messages to Workers AI (Llama 3.3) and returns the model response.
+
+**Prompt:**
+> Implement a basic chat handler in a Cloudflare Worker that:
+> - Accepts a user message
+> - Sends it to Workers AI using the Llama 3.3 instruct model
+> - Returns the assistant response as JSON
+> Keep temperature low and responses concise.
+
+**Result:**
+- Added Workers AI call using Llama 3.3
+- Implemented basic system + user prompt structure
+- Returned assistant response to the client
