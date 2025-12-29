@@ -27,3 +27,18 @@
 - Added Workers AI call using Llama 3.3
 - Implemented basic system + user prompt structure
 - Returned assistant response to the client
+
+## Prompt 3 — Durable Object memory model
+**Goal:** Store recent chat messages in a Durable Object and prune old messages to keep context manageable.
+
+**Prompt:**
+> Implement a Durable Object that:
+> - Stores recent chat messages (user + assistant)
+> - Persists state using Durable Object storage
+> - Prunes older messages beyond a fixed limit while keeping recent context
+> Return both the assistant reply and stored state.
+
+**Result:**
+- Added message persistence to Durable Object
+- Implemented pruning logic to cap history size
+- Centralized chat logic inside the Durable Object
