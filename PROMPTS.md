@@ -57,3 +57,18 @@
 - Added rolling summary stored in Durable Object
 - Implemented summarization prompt using Workers AI
 - Reduced stored message history while preserving context
+
+## Prompt 5 — Workflow-based coordination
+**Goal:** Coordinate background summarization using Cloudflare Workflows instead of inline execution.
+
+**Prompt:**
+> Implement a Cloudflare Workflow that:
+> - Accepts a session ID
+> - Triggers summarization on the associated Durable Object
+> - Can be retried safely if execution fails
+> Keep the workflow logic minimal and focused on coordination.
+
+**Result:**
+- Added Workflow definition for summarization
+- Separated coordination from request handling
+- Prepared system for asynchronous background tasks
