@@ -1,7 +1,5 @@
 # cf_ai_study_buddy
 
-# cf_ai_study_buddy
-
 An AI-powered study assistant built on Cloudflare that remembers what you’ve covered, maintains long-term session memory, and generates responses using edge-deployed LLM inference.
 
 This project demonstrates how to build a **stateful AI application on Cloudflare** using Workers AI and Durable Objects.
