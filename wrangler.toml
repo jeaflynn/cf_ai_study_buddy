@@ -1,18 +1,17 @@
-name = "chat-worker"
-main = "worker.js"
-compatibility_date = "2024-12-01"
+name = "cf_ai_study_buddy"
+main = "src/index.js"
+compatibility_date = "2025-12-29"
 
-# Workers AI binding
 [ai]
 binding = "AI"
 
-# Durable Object binding
 [[durable_objects.bindings]]
-name = "CHAT_SESSION"
-class_name = "ChatSession"
-script_name = "chat-worker"
+name = "MEMORY"
+class_name = "MemoryDO"
 
-# Durable Object migration (required for first deployment)
 [[migrations]]
 tag = "v1"
-new_classes = ["ChatSession"]
+new_classes = ["MemoryDO"]
+
+[workflows]
+binding = "WORKFLOWS"
