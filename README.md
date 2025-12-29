@@ -8,11 +8,11 @@ This project demonstrates how to build a **stateful AI application on Cloudflare
 
 ## Features
 
-- 💬 **Chat-based user interface** for asking questions and studying topics
-- 🧠 **Persistent memory per session** using Durable Objects
-- 🧾 **Rolling summary memory** to compress long conversations and retain key learning points
-- ⚡ **Edge LLM inference** using Workers AI (Llama 3.3)
-- ♻️ Automatic pruning and memory management to stay within context limits
+- **Chat-based user interface** for asking questions and studying topics
+- **Persistent memory per session** using Durable Objects
+- **Rolling summary memory** to compress long conversations and retain key learning points
+- **Edge LLM inference** using Workers AI (Llama 3.3)
+- Automatic pruning and memory management to stay within context limits
 
 ---
 
